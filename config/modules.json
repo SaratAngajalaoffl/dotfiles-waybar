@@ -1,0 +1,70 @@
+{
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "active-only": false,
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+            "urgent": "",
+            "active": "",
+            "default": ""
+        },
+        "persistent_workspaces": {
+            "*": 5
+        }
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "interval": 1,
+        "format": "{:%a, %d %b, %I:%M:%S %p}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "on-click": "~/.config/waybar/scripts/toggle_calendar.sh"
+    },
+    "wireplumber": {
+        "format": " {volume}%",
+        "tooltip": true,
+        "on-click": "pavucontrol"
+    },
+    "custom/playback": {
+        "exec-if": "~/.config/waybar/scripts/should_show_playback.sh",
+        "exec": "~/.config/waybar/scripts/current_playback.sh",
+        "return-type": "json",
+        "interval": 1,
+        "format": "{icon} {text}",
+        "tooltip": false,
+        "on-click": "playerctl play-pause",
+        "format-icons": {
+            "playing": "",
+            "paused": "",    
+            "stopped": ""
+        }
+    },
+    "custom/bluetooth": {
+        "exec": "~/.config/waybar/scripts/bluetooth_data.sh",
+        "return-type": "json",
+        "interval": 1,
+        "format": " {text}",
+        "tooltip": true,
+        "on-click": "kitty --class bluetui -o remember_window_size=no --detach --start-as=fullscreen --single-instance --instance-group=bluetui sh -c 'bluetui || sleep 2'"
+    },
+    "custom/lock": {
+        "format": "",
+        "tooltip-format": "Lock",
+        "tooltip": true,
+        "on-click": "hyprlock"
+    },
+    "custom/shutdown": {
+        "format": "",
+        "tooltip-format": "Shutdown",
+        "tooltip": true,
+        "on-click": "shutdown now"
+    },
+    "custom/reboot": {
+        "format": "",
+        "tooltip-format": "Reboot",
+        "tooltip": true,
+        "on-click": "reboot"
+    }
+}

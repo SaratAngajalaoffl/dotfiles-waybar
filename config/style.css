@@ -1,0 +1,235 @@
+/*
+ * __        __          _                  ____  _         _       
+ * \ \      / /_ _ _   _| |__   __ _ _ __  / ___|| |_ _   _| | ___  
+ *  \ \ /\ / / _` | | | | '_ \ / _` | '__| \___ \| __| | | | |/ _ \ 
+ *   \ V  V / (_| | |_| | |_) | (_| | |     ___) | |_| |_| | |  __/ 
+ *    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    |____/ \__|\__, |_|\___| 
+ *                 |___/                              |___/         
+ *  
+ * by Stephan Raabe (2023) 
+ * ----------------------------------------------------- 
+*/
+
+/* -----------------------------------------------------
+ * Import Pywal colors 
+ * ----------------------------------------------------- */
+@import "./colors.css";
+
+/* -----------------------------------------------------
+ * General 
+ * ----------------------------------------------------- */
+
+* {
+  font-family:
+    "FiraCode Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  border: none;
+  border-radius: 0px;
+}
+
+window#waybar {
+  background-color: @base;
+  border-bottom: 0px solid @overlay;
+  background: transparent;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+/* -----------------------------------------------------
+ * Tooltips
+ * ----------------------------------------------------- */
+
+tooltip {
+  border-radius: 10px;
+  background-color: @surface0;
+  opacity: 0.8;
+  padding: 20px;
+  margin: 0px;
+}
+
+tooltip label {
+  color: @text;
+}
+
+/* -----------------------------------------------------
+ * Window
+ * ----------------------------------------------------- */
+
+#window {
+  background: @surface0;
+  border-radius: 12px;
+  color: @text;
+  font-size: 16px;
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+/* -----------------------------------------------------
+ * Workspaces 
+ * ----------------------------------------------------- */
+
+#workspaces {
+  background: @surface0;
+  margin-left: 20px;
+  margin-right: 10px;
+  padding: 4px 1px;
+  border-radius: 12px;
+  font-weight: normal;
+  font-style: normal;
+  opacity: 0.8;
+}
+
+#workspaces button {
+  padding: 0px 15px;
+  margin: 0px 3px;
+  border-radius: 12px;
+  color: @overlay;
+  background-color: @overlay0;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.4;
+}
+
+#workspaces button.active {
+  color: @red;
+  background-color: @red;
+  border-radius: 10px;
+  min-width: 30px;
+  background-size: 400% 400%;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+#workspaces button:hover {
+  background-color: @surface0;
+  color: @red;
+  border-radius: 10px;
+  min-width: 30px;
+  background-size: 400% 400%;
+}
+
+
+/* -----------------------------------------------------
+ * Clock
+ * ----------------------------------------------------- */
+
+#clock {
+  background-color: @surface0;
+  font-size: 16px;
+  font-weight: bold;
+  color: @text;
+  border-radius: 12px;
+  padding: 5px 15px 5px 15px;
+  opacity: 0.8;
+}
+
+#custom-playback {
+  background-color: @surface0;
+  font-size: 10px;
+  color: @text;
+  border-radius: 14px;
+  padding: 0px 14px 0px 10px;
+  margin-right: 10px;
+  opacity: 0.8;
+  border: 1px solid @surface0;
+}
+
+#custom-bluetooth {
+  background-color: @surface0;
+  font-size: 18px;
+  color: @text;
+  border-radius: 12px;
+  padding: 5px 15px 5px 15px;
+  margin-right: 10px;
+  opacity: 0.8;
+}
+
+#wireplumber {
+  background-color: @surface0;
+  font-size: 16px;
+  color: @text;
+  border-radius: 12px;
+  padding: 5px 15px 5px 15px;
+  margin-right: 10px;
+  opacity: 0.8;
+}
+
+#wireplumber.muted {
+  background-color: @surface0;
+  color: @text;
+}
+
+#tray {
+  background-color: @surface0;
+  font-size: 16px;
+  color: @text;
+  border-radius: 12px;
+  padding: 5px 15px 5px 15px;
+  margin-right: 10px;
+  opacity: 0.8;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: @surface0;
+}
+
+#custom-lock {
+  background-color: transparent;
+  font-size: 24px;
+  color: @text;
+  margin-right: 20px;
+  opacity: 0.8;
+}
+
+#custom-reboot {
+  background-color: transparent;
+  font-size: 24px;
+  color: @text;
+  margin-right: 20px;
+  opacity: 0.8;
+}
+
+#custom-shutdown {
+  background-color: transparent;
+  font-size: 24px;
+  color: @text;
+  margin-right: 20px;
+  opacity: 0.8;
+}
+
+
+/* -----------------------------------------------------
+ * Other
+ * ----------------------------------------------------- */
+
+label:focus {
+  background-color: @surface0;
+}
+
+#backlight {
+  background-color: @surface0;
+}
+
+#network {
+  background-color: @surface0;
+}
+
+#network.disconnected {
+  background-color: @surface0;
+}
+
+menu {
+  border-radius: 15px;
+  background: @surface0;
+  color: @text;
+}
+menuitem {
+  border-radius: 15px;
+}
