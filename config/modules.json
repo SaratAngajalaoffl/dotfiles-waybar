@@ -47,7 +47,7 @@
         "interval": 1,
         "format": " {text}",
         "tooltip": true,
-        "on-click": "kitty --class bluetui -o remember_window_size=no --detach --start-as=fullscreen --single-instance --instance-group=bluetui sh -c 'bluetui || sleep 2'"
+        "on-click": "eww open --toggle bluetooth-control"
     },
     "custom/user": {
         "format": "",
