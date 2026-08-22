@@ -25,7 +25,7 @@
     "wireplumber": {
         "format": " {volume}%",
         "tooltip": true,
-        "on-click": "pavucontrol"
+        "on-click": "eww open --toggle audio-control"
     },
     "custom/playback": {
         "exec-if": "~/.config/waybar/scripts/should_show_playback.sh",
