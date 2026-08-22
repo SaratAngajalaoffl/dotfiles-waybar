@@ -45,8 +45,6 @@
         "custom/playback",
         "wireplumber",
         "tray",
-        "custom/lock",
-        "custom/reboot",
-        "custom/shutdown"
+        "custom/user"
     ],
 }

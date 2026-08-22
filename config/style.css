@@ -180,27 +180,16 @@ window#waybar.empty #window {
   background-color: @surface0;
 }
 
-#custom-lock {
-  background-color: transparent;
-  font-size: 24px;
-  color: @text;
-  margin-right: 20px;
-  opacity: 0.8;
-}
+/* -----------------------------------------------------
+ * User menu trigger (opens eww dropdown)
+ * ----------------------------------------------------- */
 
-#custom-reboot {
-  background-color: transparent;
-  font-size: 24px;
+#custom-user {
+  background-color: @surface0;
+  font-size: 16px;
   color: @text;
-  margin-right: 20px;
-  opacity: 0.8;
-}
-
-#custom-shutdown {
-  background-color: transparent;
-  font-size: 24px;
-  color: @text;
-  margin-right: 20px;
+  border-radius: 12px;
+  padding: 5px 15px 5px 15px;
   opacity: 0.8;
 }
 

@@ -49,22 +49,10 @@
         "tooltip": true,
         "on-click": "kitty --class bluetui -o remember_window_size=no --detach --start-as=fullscreen --single-instance --instance-group=bluetui sh -c 'bluetui || sleep 2'"
     },
-    "custom/lock": {
-        "format": "",
-        "tooltip-format": "Lock",
+    "custom/user": {
+        "format": "",
+        "tooltip-format": "mugiwara",
         "tooltip": true,
-        "on-click": "hyprlock"
-    },
-    "custom/shutdown": {
-        "format": "",
-        "tooltip-format": "Shutdown",
-        "tooltip": true,
-        "on-click": "shutdown now"
-    },
-    "custom/reboot": {
-        "format": "",
-        "tooltip-format": "Reboot",
-        "tooltip": true,
-        "on-click": "reboot"
+        "on-click": "eww open --toggle user-menu"
     }
 }
