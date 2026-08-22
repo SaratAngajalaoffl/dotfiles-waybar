@@ -161,6 +161,16 @@ window#waybar.empty #window {
   color: @text;
 }
 
+#custom-clipboard {
+  background-color: @surface0;
+  font-size: 16px;
+  color: @text;
+  border-radius: 12px;
+  padding: 5px 15px 5px 15px;
+  margin-right: 10px;
+  opacity: 0.8;
+}
+
 #tray {
   background-color: @surface0;
   font-size: 16px;

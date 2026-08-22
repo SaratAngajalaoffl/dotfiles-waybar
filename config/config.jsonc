@@ -45,6 +45,7 @@
         "custom/playback",
         "wireplumber",
         "custom/bluetooth",
+        "custom/clipboard",
         "tray",
         "custom/user"
     ],

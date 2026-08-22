@@ -54,5 +54,11 @@
         "tooltip-format": "mugiwara",
         "tooltip": true,
         "on-click": "eww open --toggle user-menu"
+    },
+    "custom/clipboard": {
+        "format": "",
+        "tooltip-format": "Clipboard history",
+        "tooltip": true,
+        "on-click": "eww open --toggle clipboard-history"
     }
 }
