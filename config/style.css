@@ -136,6 +136,17 @@ window#waybar.empty #window {
   border: 1px solid @surface0;
 }
 
+#custom-cliamp {
+  background-color: @surface0;
+  font-size: 13px;
+  color: @text;
+  border-radius: 14px;
+  padding: 0px 14px;
+  margin-right: 10px;
+  opacity: 0.8;
+  border: 1px solid @surface0;
+}
+
 #custom-bluetooth {
   background-color: @surface0;
   font-size: 18px;
