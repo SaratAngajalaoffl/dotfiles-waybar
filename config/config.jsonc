@@ -44,6 +44,7 @@
     "modules-right": [
         "custom/playback",
         "wireplumber",
+        "custom/bluetooth",
         "tray",
         "custom/user"
     ],

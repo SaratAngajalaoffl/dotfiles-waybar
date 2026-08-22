@@ -46,6 +46,7 @@ while read -r mac name; do
   [[ -z "$mac" ]] && continue
   info=$(bluetoothctl info "$mac" 2>/dev/null)
   battery=$(get_battery "$mac" "$info")
+  [[ -n "$rows" ]] && rows="$rows"$'\n'
   rows="$rows$name	$battery%"
   ((count++)) || true
 done < <(get_connected)
@@ -59,7 +60,7 @@ fi
 
 # Waybar custom module JSON (text + tooltip as requested; alt/class/percentage for compatibility)
 if command -v jq &>/dev/null; then
-  jq -n \
+  jq -nc \
     --arg text "$text" \
     --arg alt "bluetooth" \
     --arg tooltip "$tooltip" \
