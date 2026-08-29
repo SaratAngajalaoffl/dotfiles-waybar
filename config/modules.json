@@ -41,13 +41,13 @@
             "stopped": ""
         }
     },
-    "custom/cliamp": {
-        "exec": "~/.config/waybar/scripts/cliamp_data.sh",
+    "custom/spotify": {
+        "exec": "~/.config/waybar/scripts/spotify_data.sh",
         "return-type": "json",
-        "interval": 1,
-        "format": "{text}",
+        "interval": 2,
+        "format": " {text}",
         "tooltip": true,
-        "on-click": "~/.config/eww/scripts/eww-open.sh cliamp-control"
+        "on-click": "~/.config/eww/scripts/eww-open.sh spotify-control"
     },
     "custom/bluetooth": {
         "exec": "~/.config/waybar/scripts/bluetooth_data.sh",

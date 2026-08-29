@@ -136,7 +136,7 @@ window#waybar.empty #window {
   border: 1px solid @surface0;
 }
 
-#custom-cliamp {
+#custom-spotify {
   background-color: @surface0;
   font-size: 13px;
   color: @text;

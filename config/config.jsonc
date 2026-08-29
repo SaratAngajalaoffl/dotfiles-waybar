@@ -43,7 +43,7 @@
     // Modules Right    
     "modules-right": [
         "custom/playback",
-        "custom/cliamp",
+        "custom/spotify",
         "wireplumber",
         "custom/bluetooth",
         "custom/clipboard",
